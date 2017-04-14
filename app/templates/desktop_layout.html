@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+  Desktop - Layout
+{% endblock title %}
+
+{% block metas %}
+  {{ super() }}
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+{% endblock metas %}
+
+{% block styles %}
+  {{ super() }}
+{% endblock styles %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+  $(function () {
+    console.log("desktop-layout");
+  });
+  </script>
+{% endblock scripts %}
