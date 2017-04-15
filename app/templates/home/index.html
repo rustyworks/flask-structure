@@ -4,6 +4,11 @@
   Index
 {% endblock title %}
 
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/home.css') }}>
+{% endblock styles %}
+
 {% block content %}
   <div class="container">
     <h1>Insert content here</h1>
