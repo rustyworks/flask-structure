@@ -1,8 +1,8 @@
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
 
 
-class SimpleForm(Form):
+class SimpleForm(FlaskForm):
     name = StringField('Your name', validators=[Required()])
     submit = SubmitField('Submit')
